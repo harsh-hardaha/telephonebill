@@ -1,16 +1,10 @@
-<%-- 
-    Document   : generatebill
-    Created on : Apr 13, 2015, 12:49:30 AM
-    Author     : acer
---%>
-
-<%@page import="TelephoneBill.Customer"%>
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@page import="com.bean.Customer"%>
 <%@page import="java.util.Iterator"%>
 <%@page import="org.hibernate.Query"%>
 <%@page import="org.hibernate.cfg.Configuration"%>
 <%@page import="org.hibernate.SessionFactory"%>
 <%@page import="org.hibernate.Session"%>
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@page import="org.hibernate.boot.registry.StandardServiceRegistryBuilder"%>
 <%! int custid;String cname; String username;String address; int phoneno;SessionFactory factory;
     StandardServiceRegistryBuilder sr;Session session1; %>
@@ -23,8 +17,8 @@
         <title>Generate Bill</title>
     </head>
     
-    
-        <form action="/TelephoneBill/GenerateBillController" method="POST">
+    <body align="center" bgcolor="pink">
+        <form action="GenerateBillController" method="POST">
         
       <br  /><br  /><center>
         <h1>Telephone Bill Portal</h1></center>
@@ -93,5 +87,5 @@
         <center> <input type="submit" name="generatebill" value="Generate Bill"/></center>&nbsp;&nbsp;&nbsp;
     </center>
         </form>
-    
+    </body>
 </html>

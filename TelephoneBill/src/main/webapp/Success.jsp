@@ -1,9 +1,3 @@
-<%-- 
-    Document   : Success
-    Created on : Apr 12, 2015, 4:46:42 PM
-    Author     : acer
---%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <%! String username; %>
@@ -13,7 +7,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Login Page</title>
     </head>
-    <body>
+    <body align="center" bgcolor="pink">
         <% if(username.equals(username))
         {%>
         

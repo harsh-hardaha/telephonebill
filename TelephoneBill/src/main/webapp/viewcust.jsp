@@ -1,13 +1,7 @@
-<%-- 
-    Document   : viewcust
-    Created on : Apr 13, 2015, 12:49:16 AM
-    Author     : acer
---%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 
 <%@page import="org.hibernate.boot.registry.StandardServiceRegistryBuilder"%>
-<%@ page import="java.util.*,TelephoneBill.*,org.hibernate.*,org.hibernate.cfg.*" %>
+<%@ page import="java.util.*,com.bean.*,org.hibernate.*,org.hibernate.cfg.*" %>
 <%! int custid;String cname; String username;String address; String phoneno;SessionFactory factory;
     StandardServiceRegistryBuilder sr;Session session1; %>
 <%! String uname; %>
@@ -18,7 +12,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Customer Details</title>
     </head>
-    <body>
+   <body align="center" bgcolor="pink">
          <br  /><br  /><center>
         <h1>Telephone Bill Portal</h1></center>
         <p align="right">Welcome <%=uname%>&nbsp;&nbsp;&nbsp;

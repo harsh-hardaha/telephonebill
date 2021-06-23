@@ -1,12 +1,6 @@
-<%-- 
-    Document   : viewprofile
-    Created on : Apr 12, 2015, 8:29:21 PM
-    Author     : acer
---%>
-
 <%@page import="org.hibernate.boot.registry.StandardServiceRegistryBuilder"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@ page import="java.util.*,TelephoneBill.*,org.hibernate.*,org.hibernate.cfg.*" %>
+<%@ page import="java.util.*,com.bean.*,org.hibernate.*,org.hibernate.cfg.*" %>
 <%! int custid;String cname; String username;String address; String phoneno;SessionFactory factory;
     StandardServiceRegistryBuilder sr;Session session1; %>
 <%! String uname; %>
@@ -19,7 +13,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title> Profile Details </title>
     </head>
-    <body>
+    <body align="center" bgcolor="pink">
         
        
         

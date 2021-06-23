@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
-  <display-name>TelephoneBill</display-name>
+ <display-name>TelephoneBill</display-name>
   <welcome-file-list>
     <welcome-file>index.html</welcome-file>
     <welcome-file>index.htm</welcome-file>
@@ -11,19 +11,19 @@
   </welcome-file-list>
   <servlet>
     <servlet-name>RegisterController</servlet-name>
-    <servlet-class>com.controller.RegisterController</servlet-class>
+    <servlet-class>com.action.RegisterController</servlet-class>
   </servlet>
   <servlet>
     <servlet-name>LoginController</servlet-name>
-    <servlet-class>com.controller.LoginController</servlet-class>
+    <servlet-class>com.action.LoginController</servlet-class>
   </servlet>
   <servlet>
     <servlet-name>AdminController</servlet-name>
-    <servlet-class>com.controller.AdminController</servlet-class>
+    <servlet-class>com.action.AdminController</servlet-class>
   </servlet>
   <servlet>
     <servlet-name>GenerateBillController</servlet-name>
-    <servlet-class>com.controller.GenerateBillController</servlet-class>
+    <servlet-class>com.action.GenerateBillController</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>RegisterController</servlet-name>

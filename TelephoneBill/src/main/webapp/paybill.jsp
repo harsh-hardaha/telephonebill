@@ -1,12 +1,7 @@
-<%-- 
-    Document   : paybill
-    Created on : Apr 12, 2015, 8:35:16 PM
-    Author     : acer
---%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@page import="org.hibernate.boot.registry.StandardServiceRegistryBuilder"%>
-<%@ page import="java.util.*,TelephoneBill.*,org.hibernate.*,org.hibernate.cfg.*" %>
+<%@ page import="java.util.*,com.bean.*,org.hibernate.*,org.hibernate.cfg.*" %>
+
 <%! int custid;String cname; String username;String address; String phoneno;SessionFactory factory;
     StandardServiceRegistryBuilder sr;Session session1; %>
 <%!int cid; int billno; int usage;int amt;String dt;%>
@@ -19,10 +14,11 @@
         <title>Pay bill</title>
     </head>
     
-    <body>
+    <body align="center" bgcolor="pink">
         <form>
        <center>
-            <h1>Telephone Bill Portal</h1></center>
+            <h1>Telephone Bill Portal</h1>
+            </center>
             <p align="right">Welcome <%=uname%>&nbsp;&nbsp;&nbsp;
                 <a href = "Logout.jsp">Logout</a>
             </p>
@@ -59,33 +55,7 @@
         usage=gb.getCallusage();
         dt=gb.getDuedate();
         phoneno=gb.getPhoneno();
-        /*
-            while(it1.hasNext())
-            {
-                
-                GenerateBill gb = (GenerateBill)  it1.next();
-                
-                cid = gb.getCustid();            
-                
-                while(it.hasNext())
-                {
-                    
-                    Customer cust = (Customer)it.next();
-                    username = cust.getUsername();
-                   
-                    if(username.equals(uname))
-                    {
-                        custid = cust.getCustid();
-                    
-                    
-                    if(custid==cid)
-                    {
-                        billno = gb.getBillno();
-                        amt = gb.getAmount();
-                        usage = gb.getCallusage();
-                        dt = "13-apr-2015";
-                        
-          */  %>  
+          %>  
         <tr>
             <td><label>Bill no </label></td><td>:</td>
             <td><label><%=billno%></label></td>
@@ -112,6 +82,8 @@
             <td><label>Due Date:</label></td><td>:</td>
             <td><label> <%=dt%></label></td>
         </tr>
+         
+        
         <%
                     
             }

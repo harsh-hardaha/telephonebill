@@ -1,9 +1,3 @@
-<%-- 
-    Document   : adminSuccess
-    Created on : Apr 13, 2015, 12:49:48 AM
-    Author     : acer
---%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%! String username; %>
 <% username = session.getAttribute("username").toString();%>
@@ -13,11 +7,13 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Admin Home</title>
     </head>
-    <body>
+    <body align="center" bgcolor="pink">
           <% if(username.equals(username))
         {%>
         
-        <center> <h1>Telephone Bill Portal</h1></center>
+        <center> 
+        <h1>Telephone Bill Portal</h1>
+      	</center>
         <p align="right">
             <b>Welcome <%=username%></b>&nbsp;&nbsp;
              <a href="/TelephoneBill/Logout.jsp">Logout</a>

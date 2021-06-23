@@ -1,9 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package TelephoneBill;
+package com.dao;
 
 import java.sql.Connection;
 import java.util.Iterator;
@@ -14,10 +9,8 @@ import org.hibernate.Transaction;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.hibernate.cfg.Configuration;
 
-/**
- *
- * @author acer
- */
+import com.bean.Admin;
+
 public class AdminManager 
 {
     SessionFactory factory;
@@ -58,7 +51,7 @@ public class AdminManager
                 String uname = ad.getAdminuname();
                 String pwd = ad.getAdminpwd();
                 if(adminuname.equals(uname)&&adminpwd.equals(pwd))
-             //  if((username.equals("valar"))&& (password.equals("mathi")))
+             //  if((username.equals("mini"))&& (password.equals("bhar")))
                 {
                     flag = true;
                     break;
@@ -79,39 +72,5 @@ public class AdminManager
         
         return flag;
     }
-      
- /*   public void generateBill(String duedate,int callusage,int custid )
-    {
-        Session session=null;
-        Transaction tx=null;
-        String paiddate = null;
-        int phoneno;
-        int charge = 2;
-        int amount = 0;
-        try
-        {
-            session = factory.openSession();
-            tx = session.beginTransaction();
-            
-            List customer = session.createQuery("from Customer").list();
-            for(Iterator iterator = customer.iterator(); iterator.hasNext();)
-            {
-                Customer cust = (Customer) iterator.next();
-                phoneno = cust.getPhoneno();
-                
-                amount = callusage*charge;
-                
-                GenerateBill rg = new GenerateBill(phoneno,duedate,paiddate,callusage,amount,custid);
-                session.save(rg);
-                tx.commit();
-            }
-            
-        }
-        catch(Exception e)
-        {
-            if(tx!=null)
-                tx.rollback();
-            e.printStackTrace();
-        }
-    }*/
+     
 }

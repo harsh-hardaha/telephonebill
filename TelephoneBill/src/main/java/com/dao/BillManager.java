@@ -1,9 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package TelephoneBill;
+package com.dao;
 
 import java.util.Iterator;
 import java.util.List;
@@ -13,10 +8,9 @@ import org.hibernate.Transaction;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.hibernate.cfg.Configuration;
 
-/**
- *
- * @author acer
- */
+import com.bean.Customer;
+import com.bean.GenerateBill;
+
 public class BillManager 
 {
     SessionFactory factory;
